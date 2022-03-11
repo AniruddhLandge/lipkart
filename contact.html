@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+    <style>
+        :root{
+    --main-bg-colour: #2874f0;;
+}
+*{
+    margin: 0;
+    padding: 0;
+}*
+header{
+    background-color: var(--main-bg-colour);
+    height: 55px;
+}
+nav{
+    display: flex;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 6.3vw;
+    padding: 16px 25px;
+}
+nav div{
+    color: white;
+    font-style: italic;
+    font-weight: bolder;
+   font-size: 30px;
+   padding: 0 25px;
+}
+nav ul{
+    height: 4.6vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 8px;
+    font-size: 3.5vh;
+    margin-left: 32vw;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    justify-content: center;
+}
+h2{
+    text-align: center;
+    margin: 12px 0;
+}
+.container{
+    min-height: 73vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 43px 0;
+}
+.myForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.myInput{
+    font-size: 16px;
+    width: 40%;
+    padding: 9px;
+    margin: 8px;
+    border: 2px solid #9d8e8e;
+    border-radius: 12px;
+    outline: none;
+}
+.btn{
+    padding: 5px 10px;
+    font-size: 18px;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: white;
+    background: #d43b3b;
+    cursor: pointer;
+}
+footer{
+    height: 4.5vh;
+    background-color: var(--main-bg-colour);
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: italic;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+       padding: 12px 0px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png" alt="">
+            </div>
+            <ul>
+                <li> <a href="contact">Contact Page</a></li>
+            </ul>
+           </nav>
+   </header>
+   <div class="container">
+   <form action="/contact", method="post", class="myForm">
+       <h2>Contact Us</h2>
+           <input type="text", class="myInput", name="name", placeholder="Enter your name">
+           <input type="phone", class="myInput", name="phone", placeholder="Enter your phone number">
+           <input type="email", class="myInput", name="email", placeholder="Enter your email id">
+           <input type="text", class="myInput", name="address", placeholder="Enter your address">
+           <input type="text", class="myInput", name="desc", placeholder="Enter your concern">
+           <button class="btn">Submit</button>
+       </div>
+   </form>
+   <footer class="flex-all-center">
+    <p>Copyright &copy; Flipkart.com</p>
+</footer>
+</body>
+</html>
